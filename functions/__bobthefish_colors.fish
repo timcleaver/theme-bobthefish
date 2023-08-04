@@ -30,6 +30,7 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
       set -x color_k8s                      magenta white --bold
       set -x color_aws_vault                blue $colorfg --bold
       set -x color_aws_vault_expired        blue red --bold
+      set -x color_aws_region               bryellow $colorfg
       set -x color_username                 white black --bold
       set -x color_hostname                 white black
       set -x color_rvm                      brmagenta $colorfg --bold
