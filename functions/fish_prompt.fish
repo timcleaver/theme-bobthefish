@@ -1067,6 +1067,7 @@ function __bobthefish_prompt_screen -S -d 'Display the screen name'
     and return
 
     __bobthefish_start_segment $color_screen
+    echo -ns $screen_glyph ' '
     [ "$theme_display_screen_verbose" = "yes" ]
     and echo -ns (string split "." -- $STY)[2]
     echo -ns ' '

@@ -90,6 +90,7 @@ function __bobthefish_glyphs -S -d 'Define glyphs used by bobthefish'
     set git_plus_glyph       \uF0DE # fa-sort-asc
     set git_minus_glyph      \uF0DD # fa-sort-desc
     set git_plus_minus_glyph \uF0DC # fa-sort
+    set screen_glyph         \uF489 #
   end
 
   # Avoid ambiguous glyphs
