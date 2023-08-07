@@ -35,7 +35,7 @@ function __bobthefish_glyphs -S -d 'Define glyphs used by bobthefish'
   set -x tf_glyph                \ue69a # ''
 
   # Azure glyphs
-  set -x azure_glyph             \ufd03 # ﴃ 'nf-mdi-azure'
+  set -x azure_glyph             \uebd8 #  'nf-cod-azure'
 
   # Vagrant glyphs
   set -x vagrant_running_glyph   \u2191 # ↑ 'running'
