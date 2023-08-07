@@ -34,6 +34,9 @@ function __bobthefish_glyphs -S -d 'Define glyphs used by bobthefish'
   # Terraform glyph
   set -x tf_glyph                \ue69a # ''
 
+  # Azure glyphs
+  set -x azure_glyph             \ufd03 # ﴃ 'nf-mdi-azure'
+
   # Vagrant glyphs
   set -x vagrant_running_glyph   \u2191 # ↑ 'running'
   set -x vagrant_poweroff_glyph  \u2193 # ↓ 'poweroff'
