@@ -32,6 +32,7 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
       set -x color_aws_vault                blue $colorfg --bold
       set -x color_aws_vault_expired        blue red --bold
       set -x color_aws_region               bryellow $colorfg
+      set -x color_aws_profile              bryellow $colorfg
       set -x color_username                 white black --bold
       set -x color_hostname                 white black
       set -x color_screen                   brgreen $colorfg --bold
@@ -69,6 +70,8 @@ function __bobthefish_colors -S -a color_scheme -d 'Define colors used by bobthe
       set -x color_k8s                      magenta white --bold
       set -x color_aws_vault                blue $colorfg --bold
       set -x color_aws_vault_expired        blue red --bold
+      set -x color_aws_profile              bryellow $colorfg
+      set -x color_aws_region               bryellow $colorfg
       set -x color_username                 black white --bold
       set -x color_hostname                 black white
       set -x color_screen                   brgreen $colorfg --bold
@@ -714,6 +717,8 @@ function __bobthefish_user_color_scheme_deprecated
   set -x color_vagrant                  $__color_vagrant
   set -x color_aws_vault                $__color_aws_vault
   set -x color_aws_vault_expired        $__color_aws_vault_expired
+  set -x color_aws_region               $__color_aws_region
+  set -x color_aws_profile              $__color_aws_profile
   set -x color_username                 $__color_username
   set -x color_hostname                 $__color_hostname
   set -x color_screen                   $__color_screen

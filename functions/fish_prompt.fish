@@ -751,6 +751,21 @@ function __bobthefish_prompt_aws_region -S -d 'Show AWS region'
     echo -ns $segment ' '
 end
 
+function __bobthefish_prompt_aws_profile -S -d 'Show AWS Profile'
+    [ "$theme_display_aws_profile" = 'yes' ]
+    or return
+
+    [ -n "$AWS_PROFILE" ]
+    or return
+
+    # print profile then aws
+    set -l segment $AWS_PROFILE " " \ue7ad
+    set -l status_color $color_aws_profile
+
+    __bobthefish_start_segment $status_color
+    echo -ns $segment ' '
+end
+
 
 # ==============================
 # User / hostname info segments
@@ -1264,6 +1279,7 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     __bobthefish_prompt_aws_vault_profile
     __bobthefish_prompt_awsume_profile
     __bobthefish_prompt_aws_region
+    __bobthefish_prompt_aws_profile
 
     # Virtual environments
     __bobthefish_prompt_nix
