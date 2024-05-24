@@ -1106,7 +1106,7 @@ function __bobthefish_prompt_virtualfish -S -d "Display current Python virtual e
     command -q python
     or return
 
-    [ "$theme_display_virtualenv" = 'no' -o -z "$VIRTUAL_ENV" -a -z "$CONDA_DEFAULT_ENV" ]
+    [ "$theme_display_virtualenv" = 'no' -o -z "$VIRTUAL_ENV" -a -z "$CONDA_DEFAULT_ENV" -a -z "$PYENV_VERSION" ]
     and return
 
     set -l version_glyph (__bobthefish_virtualenv_python_version)
@@ -1130,6 +1130,8 @@ function __bobthefish_prompt_virtualfish -S -d "Display current Python virtual e
 
     if [ "$VIRTUAL_ENV" ]
         echo -ns (basename "$VIRTUAL_ENV") ' '
+    else if [ "$PYENV_VERSION" ]
+        echo -ns (basename "$PYENV_VERSION") ' '
     else if [ "$CONDA_DEFAULT_ENV" ]
         echo -ns (basename "$CONDA_DEFAULT_ENV") ' '
     end
